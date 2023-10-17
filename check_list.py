@@ -2,7 +2,7 @@ import boto3
 import time
 
 #Create ec2 client
-ec2 = boto3.client('ec2')
+ec2 = boto3.client('ec2', region_name='ap-southeast-1')
 response = ec2.describe_instances()
 
 # #Print Reservations 
