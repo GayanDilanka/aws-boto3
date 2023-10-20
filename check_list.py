@@ -23,6 +23,9 @@ for reservation in response["Reservations"]:
     status_code = reservation["Instances"][0]["State"]["Code"]
     status = reservation["Instances"][0]["State"]["Name"]
 
+    if instance_id == "i-08c22de8b1f13ee95" or instance_id == "i-00fbb95a516e7551b":
+    continue
+    
     print("=========================")
     print(instance_id +" "+ status)
     
